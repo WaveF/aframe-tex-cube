@@ -6,9 +6,9 @@ AFRAME.registerComponent('tex-cube', {
         back:   { type:'string', default:'none' },
         left:   { type:'string', default:'none' },
         right:  { type:'string', default:'none' },
-        width:  { type:'number', default:2 },
-        height: { type:'number', default:2 },
-        depth:  { type:'number', default:2 }
+        width:  { type:'number', default:1 },
+        height: { type:'number', default:1 },
+        depth:  { type:'number', default:1 }
     },
 
     init: function() {
