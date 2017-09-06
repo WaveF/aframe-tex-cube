@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3d devices</title>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-tex-cube.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-camera position="0 0 6"></a-camera>
+
+        <a-entity tex-cube="front:images/front.jpg;
+                        back:images/back.jpg;
+                        top:images/top.jpg;
+                        bottom:images/bottom.jpg;
+                        left:images/left.jpg;
+                        right:images/right.jpg">
+            <a-animation attribute="rotation" from="0 0 0" to="0 360 0" dur="2000" repeat="indefinite" easing="linear"></a-animation>
+            <a-animation attribute="position" from="0 -4 0" to="0 6 0" dur="2000" repeat="indefinite" direction="alternate"></a-animation>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
